@@ -11,7 +11,7 @@ const app = express();
 
 //app.use(cors());
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "*",
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type", "x-tenant-id"]
 }));
