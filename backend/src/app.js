@@ -11,7 +11,8 @@ const app = express();
 
 //app.use(cors());
 app.use(cors({
-  origin: "*",
+  origin: ["http://localhost:5173",
+    "https://activity-feed-system-4rkw2w1ex-leo-amit-dcostas-projects.vercel.app"],
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type", "x-tenant-id"]
 }));
