@@ -1,4 +1,4 @@
-const BASE_URL = "https://activity-feed-system.onrender.com/";
+const BASE_URL = "https://activity-feed-system.onrender.com";
 
 export const fetchActivities = async (cursor) => {
   //let url = "http://localhost:5000/activities";
