@@ -2,7 +2,7 @@ const BASE_URL = "https://activity-feed-system.onrender.com";
 
 export const fetchActivities = async (cursor) => {
   //let url = "http://localhost:5000/activities";
-  let url = `${BASE_URL}/activities`;
+  let url = `${BASE_URL}/api/activities`;
 
 
   if (cursor) {
@@ -19,7 +19,7 @@ export const fetchActivities = async (cursor) => {
 };
 
 export const createActivity = async (data) => {
-  const res = await fetch(`${BASE_URL}/activities`, {
+  const res = await fetch(`${BASE_URL}/api/activities`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
